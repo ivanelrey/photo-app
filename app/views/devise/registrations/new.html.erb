@@ -1,5 +1,5 @@
 <script type="text/javascript">
-Stripe.setPublishableKey('<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>')
+Stripe.setPublishableKey('<%= Rails.application.secrets.publishable_key %>')
 </script>
 <%= bootstrap_devise_error_messages! %>
 <div class="panel panel-default devise-bs">

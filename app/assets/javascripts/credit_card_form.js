@@ -1,10 +1,9 @@
-$(document).ready(function() {
-
+$(document).ready(function () {
 	var show_error, stripeResponseHandler, submitHandler;
 
 	submitHandler = function (event) {
 		var $form = $(event.target);
-		$form.find("input[type=submit").prop("disabled", true);
+		$form.find("input[type=submit]").prop("disabled", true);
 
 		//If Stripe was initialized correctly this will create a token using the credit card info
 		if(Stripe){
@@ -27,7 +26,7 @@ $(document).ready(function() {
 		if (response.error) {
 			console.log(response.error.message);
 			show_error(response.error.message);
-			$form.find("input[type=submit").prop("disabled", false);
+			$form.find("input[type=submit]").prop("disabled", false);
 		} else {
 			token = response.id;
 			$form.append($("<input type\"hidden\" name=\"payment[token]\" />").val(token));

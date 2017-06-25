@@ -53,5 +53,3 @@ class PictureUploader < CarrierWave::Uploader::Base
 end
 
 
-#AKIAJBG64ECZPRMITBNQ
-#o11ARJsuzquaFRJvhCW16fxOHk9h2EyUDcWoxk7p 
